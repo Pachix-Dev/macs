@@ -1,0 +1,11 @@
+.home-wrapper-first{
+    background-image: url('./bgMacsfirst.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.bodygirlmain{
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+}
