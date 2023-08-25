@@ -9,11 +9,30 @@ import './assets/fonts/BebasNeueCyrillic.ttf'
 import './assets/fonts/BebasNeueCyrillic.eot'
 import './assets/fonts/BebasNeueCyrillic.woff'
 import './assets/fonts/BebasNeueCyrillic.woff2'
+import { useEffect, useRef } from 'react'
 
 function App () {
   const { t } = useTranslation()
+  const divRef = useRef(null)
+
+  const updateDivHeight = () => {
+    const totalBodyHeight = document.body.scrollHeight
+    if (divRef.current) {
+      divRef.current.style.height = `${totalBodyHeight}px`
+    }
+  }
+
+  useEffect(() => {
+    updateDivHeight()
+    window.addEventListener('scroll', updateDivHeight)
+    return () => {
+      window.removeEventListener('scroll', updateDivHeight)
+    }
+  }, [])
+
   return (
     <>
+      <div className='bgpapel' ref={divRef} />
       <Menu />
       <Routes>
         <Route

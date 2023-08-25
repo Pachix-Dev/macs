@@ -3,24 +3,18 @@ import bodygirlmain from '../../assets/bodygirlmain.webp'
 import logoIgeco from '../../assets/logoIgeco.webp'
 import logofuelcolor from '../../assets/fuelpassioncolor.webp'
 import bodygirl from '../../assets/bodygirl.webp'
-
+import visitorimg from '../../assets/visitorimg.webp'
+import exhibitorimg from '../../assets/exhibitorimg.webp'
 import './Home.css'
 import { loadSlim } from 'tsparticles-slim'
 import { useCallback } from 'react'
 import Particles from 'react-particles'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 export function Home () {
+  const { t } = useTranslation()
   const particlesInit = useCallback(async engine => {
-    console.log(engine)
-    // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
-    // await loadFull(engine);
     await loadSlim(engine)
-  }, [])
-
-  const particlesLoaded = useCallback(async container => {
-    await console.log(container)
   }, [])
 
   return (
@@ -30,7 +24,6 @@ export function Home () {
         <Particles
           id='tsparticles'
           init={particlesInit}
-          loaded={particlesLoaded}
           options={{
             background: {
               color: {
@@ -95,11 +88,13 @@ export function Home () {
         />
         <Container>
           <div className='home-text-fisrt'>
-            <h1 className='text-light fw-bold'>START</h1>
+            <h1 className='text-light fw-bold'>
+              {t('home.start')}
+            </h1>
             <p className='text-light fw-bold ps-4'>
               <a href='/' target='_blank'>+ FACTSHEET</a><br />
-              <a href='/' target='_blank'>+ PLANO </a><br />
-              <Link to='contact'>+ CONTÁCTANOS </Link><br />
+              <a href='/' target='_blank'>+ {t('home.floor')} </a><br />
+              <Link to='contact'>+ {t('home.contact')} </Link><br />
             </p>
           </div>
         </Container>
@@ -111,47 +106,81 @@ export function Home () {
         <p className='text-center'>
           <img src={logofuelcolor} width={400} />
         </p>
-        <img src='/macsbg.webp' className='w-100 mt-5 position-relative' style={{ bottom: '-300px', zIndex: -1 }} />
-        <Row>
+        <img src='/macsbg.webp' className='w-100 mt-5 position-relative' />
+        <Row className='home-bodygirl-info'>
           <Col md={6}>
             <img src={bodygirl} alt='macs body girl' className='w-100' />
           </Col>
           <Col md={6} className='my-auto'>
-            <p>
-              Únete a nosotros en el camino a potenciar el  Fitness, Wellness, los Deportes y la Nutrición, en la feria que reúne productos y actividades exclusivas de las marcas líderes del sector, conferencias, talleres, masterclasses especializadas, concursos y activaciones físicas.<br /><br />
-
-              Somos la única expo de deportes en México con el respaldo de dos de los organizadores líderes de ferias en Europa: Italian Exhibition Group e Deutsche Messe.
-            </p>
+            <p dangerouslySetInnerHTML={{ __html: t('home.full_your_passion') }} />
           </Col>
         </Row>
-        <img src='/macsbg.webp' className='w-100 mt-5 position-relative' style={{ top: '-400px', zIndex: -1 }} />
+        <img src='/macsbg.webp' className='w-100 mt-5 position-relative' />
       </Container>
       <div className='home-activities mt-5 text-center'>
         <div className='bg-title'>
-          <h1>ACTIVIDADES Y EVENTOS</h1>
+          <h1>{t('home.activities')}</h1>
         </div>
         <div className='home-activities-wrapper'>
           <div className='position-relative'>
             <img src='/actividades1.webp' alt='fisicoconstructivismo' draggable='false' />
-            <p>CONCURSO DE FISICOCONTRUCTIVISMO </p>
+            <p>{t('home.activity_1')} </p>
           </div>
           <div className='position-relative'>
             <img src='/actividades2.webp' alt='fisicoconstructivismo' draggable='false' />
             <p>
-              ACTIVACIÓN DE CROSSTRAING Y ZUMBA
+              {t('home.activity_2')}
             </p>
           </div>
           <div className='position-relative'>
             <img src='/actividades3.webp' alt='fisicoconstructivismo' draggable='false' />
+            <p>
+              {t('home.activity_3')}
+            </p>
           </div>
           <div className='position-relative'>
             <img src='/actividades4.webp' alt='fisicoconstructivismo' draggable='false' />
+            <p>
+              {t('home.activity_4')}
+            </p>
           </div>
           <div className='position-relative'>
             <img src='/actividades5.webp' alt='fisicoconstructivismo' draggable='false' />
+            <p>
+              {t('home.activity_5')}
+            </p>
           </div>
         </div>
       </div>
+      <Container>
+        <Row>
+          <Col md={6} className='my-auto'>
+            <p className='title_visitor'>
+              {t('home.visitors')}
+            </p>
+            <p className='text_visitor'>
+              {t('home.visitors_text')}
+            </p>
+          </Col>
+          <Col md={6} className='visitor-bg'>
+            <img src={visitorimg} className='w-100' />
+          </Col>
+        </Row>
+      </Container>
+      <Row className='m-0 bg-exhibitors'>
+        <Col md={4}>
+          <img src={exhibitorimg} className='w-100' />
+        </Col>
+        <Col md={6} className='my-auto'>
+          <p className='title_exhibitor'>
+            {t('home.exhibitors')}
+          </p>
+          <p className='text_exhibitor'>
+            {t('home.exhibitors_text')}
+          </p>
+        </Col>
+      </Row>
+
     </>
   )
 }

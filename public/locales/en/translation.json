@@ -1,0 +1,23 @@
+{
+    "menu": {
+        "option_1": "About Us",
+        "option_2": "EXHIBITORS",
+        "option_3": "VISITORS"
+    },
+    "home": {
+        "start": "START",
+        "floor": "FLOOR",
+        "contact": "CONTACT",
+        "full_your_passion": "Join us on the path of boosting the industries of Fitness, Wellness, Sports and Nutrition at the fair that brings together exclusive products and activities from the leading brands in the sector, conferences, workshops, specialised masterclasses, competitions and physical activations.<br><br> We are the only sports expo in Mexico with the backing of two of the leading trade show organisers in Europe: Italian Exhibition Group and Deutsche Messe.",
+        "activities": "Activities and Events",
+        "activity_1": "PHYSICOCONTRUCTIVISM CONTEST",
+        "activity_2": "CROSSTRAING AND ZUMBA ACTIVATION",
+        "activity_3": "nutrition and wellness workshops and conferences",
+        "activity_4": "adrenaline night",
+        "activity_5": "startup launch Hub",
+        "visitors": "Visitors",
+        "visitors_text": "Fitness, Wellness, Sports and Nutrition professionals; athletes and bodybuilders; amateur and professional sportspeople; consumers of supplements and organic food products; members of clubs and gyms, and the general public.",
+        "exhibitors": "Exhibitors",
+        "exhibitors_text": "Our B2B program will attract wholesalers, decision makers,  distributors, owners and managers for: gyms, sport clubs, hotels, spa’s, clinics and pharmacies; Investors, franchises, and media."
+    }
+}
