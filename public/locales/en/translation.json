@@ -18,6 +18,11 @@
         "visitors": "Visitors",
         "visitors_text": "Fitness, Wellness, Sports and Nutrition professionals; athletes and bodybuilders; amateur and professional sportspeople; consumers of supplements and organic food products; members of clubs and gyms, and the general public.",
         "exhibitors": "Exhibitors",
-        "exhibitors_text": "Our B2B program will attract wholesalers, decision makers,  distributors, owners and managers for: gyms, sport clubs, hotels, spa’s, clinics and pharmacies; Investors, franchises, and media."
+        "exhibitors_text": "Our B2B program will attract wholesalers, decision makers,  distributors, owners and managers for: gyms, sport clubs, hotels, spa’s, clinics and pharmacies; Investors, franchises, and media.",
+        "name": "Name",
+        "email": "Email",
+        "subject": "Subject",
+        "message": "Message",
+        "send": "Send"
     }
 }

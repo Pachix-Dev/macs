@@ -4,13 +4,13 @@ import logoIgeco from '../../assets/logoIgeco.webp'
 import logofuelcolor from '../../assets/fuelpassioncolor.webp'
 import bodygirl from '../../assets/bodygirl.webp'
 import visitorimg from '../../assets/visitorimg.webp'
-import exhibitorimg from '../../assets/exhibitorimg.webp'
+import exhibitorimg from '../../assets/exhibitorimgv2.webp'
 import './Home.css'
 import { loadSlim } from 'tsparticles-slim'
 import { useCallback } from 'react'
 import Particles from 'react-particles'
-import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import { ContactForm } from './ContactForm'
 export function Home () {
   const { t } = useTranslation()
   const particlesInit = useCallback(async engine => {
@@ -92,9 +92,9 @@ export function Home () {
               {t('home.start')}
             </h1>
             <p className='text-light fw-bold ps-4'>
-              <a href='/' target='_blank'>+ FACTSHEET</a><br />
-              <a href='/' target='_blank'>+ {t('home.floor')} </a><br />
-              <Link to='contact'>+ {t('home.contact')} </Link><br />
+              <a href='/FACTSHEET MACSv1.pdf' target='_blank'>+ FACTSHEET</a><br />
+              <a href='/FLOORMACSv1.pdf' target='_blank'>+ {t('home.floor')} </a><br />
+              <a href='#contact'>+ {t('home.contact')} </a><br />
             </p>
           </div>
         </Container>
@@ -102,7 +102,7 @@ export function Home () {
           <img src={logoIgeco} width={300} className='logoIgeco' />
         </Container>
       </div>
-      <Container className='mt-5'>
+      <Container className='mt-5 home-fuel-wrapper' id='about-us'>
         <p className='text-center'>
           <img src={logofuelcolor} width={400} />
         </p>
@@ -115,7 +115,6 @@ export function Home () {
             <p dangerouslySetInnerHTML={{ __html: t('home.full_your_passion') }} />
           </Col>
         </Row>
-        <img src='/macsbg.webp' className='w-100 mt-5 position-relative' />
       </Container>
       <div className='home-activities mt-5 text-center'>
         <div className='bg-title'>
@@ -152,9 +151,9 @@ export function Home () {
           </div>
         </div>
       </div>
-      <Container>
+      <Container id='visitors'>
         <Row>
-          <Col md={6} className='my-auto'>
+          <Col md={{ order: 1, span: 6 }} xs={{ order: 2 }} className='my-auto'>
             <p className='title_visitor'>
               {t('home.visitors')}
             </p>
@@ -162,13 +161,13 @@ export function Home () {
               {t('home.visitors_text')}
             </p>
           </Col>
-          <Col md={6} className='visitor-bg'>
+          <Col md={6} xs={{ order: 1 }} className='visitor-bg'>
             <img src={visitorimg} className='w-100' />
           </Col>
         </Row>
       </Container>
-      <Row className='m-0 bg-exhibitors'>
-        <Col md={4}>
+      <Row className='m-0 bg-exhibitors' id='exhibitors'>
+        <Col md={3}>
           <img src={exhibitorimg} className='w-100' />
         </Col>
         <Col md={6} className='my-auto'>
@@ -180,7 +179,7 @@ export function Home () {
           </p>
         </Col>
       </Row>
-
+      <ContactForm />
     </>
   )
 }

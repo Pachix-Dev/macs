@@ -21,3 +21,25 @@
   border-image-repeat: repeat;
   border-color: transparent;
 }
+.whatsappIcon{
+  width: 70px;
+  position: fixed;
+  right: 80px;
+  bottom: 20px;
+  fill: white;
+  background-color: #25D366;
+  border-radius: 50%;
+  z-index: 10;
+}
+@media screen and (max-width: 768px) {
+  .whatsappIcon{
+    right: 20px;
+    width: 50px;
+  }
+  .bodygirlmain{
+    width: 100% !important;
+  }
+  .bgpapel{
+    display: none;
+  }  
+}

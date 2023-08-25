@@ -18,6 +18,11 @@
         "visitors": "Visitantes",
         "visitors_text": "Profesionales del Fitness, Wellness, Deportes y Nutrición; atletas y fisicoculturistas; deportistas aficionados y profesionales; consumidores de suplementos y productos alimenticios ecológicos; miembros de clubes y gimnasios, y público en general.",
         "exhibitors": "Expositores",
-        "exhibitors_text": "Nuestro programa B2B atraerá a los líderes del sector, mayoristas, distribuidores, tomadores de  decisiones, propietarios y operadores de gimnasios, clubes deportivos, hoteles, spas, clínicas y farmacias; inversores, franquicias, y medios de comunicación."
+        "exhibitors_text": "Nuestro programa B2B atraerá a los líderes del sector, mayoristas, distribuidores, tomadores de  decisiones, propietarios y operadores de gimnasios, clubes deportivos, hoteles, spas, clínicas y farmacias; inversores, franquicias, y medios de comunicación.",
+        "name": "Nombre",
+        "email": "Correo electrónico",
+        "subject": "Asunto",
+        "message": "Mensaje",
+        "send": "Enviar"
     }
 }

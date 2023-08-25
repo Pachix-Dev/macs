@@ -5,7 +5,7 @@
 
 .nav-link:hover {
     font-weight: bold;
-    color: #FF7F02 !important;
+    color: #02ff23 !important;
 }
 
 .nav-item:hover .dropdown-menu {
@@ -124,5 +124,5 @@
     background-color: transparent;
     border: none;
     font-weight: bold;
-    color: #FF7F02;
+    color: #02ff23;
 }

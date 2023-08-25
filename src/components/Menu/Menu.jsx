@@ -22,8 +22,8 @@ export function Menu () {
     <div className={` ${location.pathname === '/' ? 'menu-itm-home' : 'menu-itm'}`}>
       <Container>
         <div className='d-flex justify-content-end pt-2'>
-          <p className='text-light m-0'>
-            <span className=' fw-light'>CENTRO</span> <strong>CITIBANAMEX</strong>
+          <p className='text-light  m-0' style={{ textShadow: '4px 4px 4px black' }}>
+            <span>CENTRO</span> <strong>CITIBANAMEX</strong>
             <br />2024
           </p>
         </div>
@@ -47,11 +47,11 @@ export function Menu () {
                 <Nav.Link href='#about-us' onClick={handleClose}>
                   {t('menu.option_1')}
                 </Nav.Link>
-                <Nav.Link href='#exhibitors' onClick={handleClose}>
-                  {t('menu.option_2')}
-                </Nav.Link>
                 <Nav.Link href='#visitors' onClick={handleClose}>
                   {t('menu.option_3')}
+                </Nav.Link>
+                <Nav.Link href='#exhibitors' onClick={handleClose}>
+                  {t('menu.option_2')}
                 </Nav.Link>
                 <Navbar.Text className='language-option'>
                   <img src={iconworld} width={19} height={19} alt='languages-world' />

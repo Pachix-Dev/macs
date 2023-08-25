@@ -1,0 +1,14 @@
+footer{
+    background: radial-gradient(circle at 0% 0%, rgb(10, 177, 242) 0%, rgb(190, 0, 191) 33.333%, rgb(255, 115, 5) 66.667%, rgb(255, 255, 0) 100%) 0px 0px / 321px 256px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 30px;
+}
+footer img{
+    width: 100%;
+}
+footer p{
+    color: white;
+    font-size: 20px;    
+
+}
