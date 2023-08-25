@@ -5,12 +5,15 @@ import { Helmet } from 'react-helmet'
 import { Home } from './components/Home/Home'
 import { useTranslation } from 'react-i18next'
 import { Menu } from './components/Menu/Menu'
+import './assets/fonts/BebasNeueCyrillic.ttf'
+import './assets/fonts/BebasNeueCyrillic.eot'
+import './assets/fonts/BebasNeueCyrillic.woff'
+import './assets/fonts/BebasNeueCyrillic.woff2'
 
 function App () {
   const { t } = useTranslation()
   return (
     <>
-      <img src='/bgpapel.webp' alt='bg-papel' className='bgpapel' draggable='false' />
       <Menu />
       <Routes>
         <Route
