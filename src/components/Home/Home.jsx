@@ -1,7 +1,7 @@
 import { Col, Container, Row } from 'react-bootstrap'
 import bodygirlmain from '../../assets/bodygirlmain.webp'
 import logoIgeco from '../../assets/logoIgeco.webp'
-import logofuelcolor from '../../assets/fuelpassioncolor.webp'
+import logofuelcolor from '../../assets/fuelpassionColor.webp'
 import bodygirl from '../../assets/bodygirl.webp'
 import visitorimg from '../../assets/visitorimg.webp'
 import exhibitorimg from '../../assets/exhibitorimgv2.webp'
