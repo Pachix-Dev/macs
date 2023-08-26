@@ -8,7 +8,8 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    fallbackLng: 'es', // Fallback language if the user's language is not available.
+    fallbackLng: 'es',
+    lng: 'es',
     interpolation: {
       escapeValue: false // React already escapes variables.
     },
