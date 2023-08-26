@@ -11,18 +11,8 @@
   font-display: swap;
 }
 
-.bgpapel {
-  position: absolute;
-  right: 0px;
-  resize: both;
-  z-index: 9;
-  border-right: 50px solid;
-  border-image: url("/bgpapel2.png") 100;
-  border-image-repeat: repeat;
-  border-color: transparent;
-}
-.whatsappIcon{
-  width: 70px;
+.whatsappIcon {
+  width: 50px;
   position: fixed;
   right: 80px;
   bottom: 20px;
@@ -31,15 +21,18 @@
   border-radius: 50%;
   z-index: 10;
 }
+
 @media screen and (max-width: 768px) {
-  .whatsappIcon{
+  .whatsappIcon {
     right: 20px;
     width: 50px;
   }
-  .bodygirlmain{
+
+  .bodygirlmain {
     width: 100% !important;
   }
-  .bgpapel{
+
+  .bgpapel {
     display: none;
-  }  
+  }
 }

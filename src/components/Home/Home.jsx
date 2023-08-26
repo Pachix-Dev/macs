@@ -10,7 +10,7 @@ import { loadSlim } from 'tsparticles-slim'
 import { useCallback } from 'react'
 import Particles from 'react-particles'
 import { useTranslation } from 'react-i18next'
-import { ContactForm } from './ContactForm'
+import logofuel from '../../assets/fuelpassion.webp'
 export function Home () {
   const { t } = useTranslation()
   const particlesInit = useCallback(async engine => {
@@ -87,16 +87,17 @@ export function Home () {
           }}
         />
         <Container>
-          <div className='home-text-fisrt'>
-            <h1 className='text-light fw-bold'>
-              {t('home.start')}
-            </h1>
-            <p className='text-light fw-bold ps-4'>
-              <a href='/FACTSHEET MACSv1.pdf' target='_blank'>+ FACTSHEET</a><br />
-              <a href='/FLOORMACSv1.pdf' target='_blank'>+ {t('home.floor')} </a><br />
-              <a href='#contact'>+ {t('home.contact')} </a><br />
-            </p>
-          </div>
+          <Row>
+            <Col md={5} className='home-text-fisrt'>
+              <h1 className='text-light fs-3'>
+                {t('home.start')}
+              </h1>
+              <h3 className='mt-5 text-light'>
+                <span>CENTRO</span><strong> CITIBANAMEX<br />2024</strong>
+              </h3>
+              <img src={logofuel} width={300} alt='MACS' />
+            </Col>
+          </Row>
         </Container>
         <Container>
           <img src={logoIgeco} width={300} className='logoIgeco' />
@@ -179,7 +180,11 @@ export function Home () {
           </p>
         </Col>
       </Row>
-      <ContactForm />
+      <div className='home-contact-wrapper'>
+        <Container>
+          <h1>{t('home.contact')}</h1>
+        </Container>
+      </div>
     </>
   )
 }

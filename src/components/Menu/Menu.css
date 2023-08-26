@@ -1,45 +1,55 @@
-.nav-link.disabled {
-    color: white;
-    pointer-events: all;
-}
-
 .nav-link:hover {
     font-weight: bold;
     color: #02ff23 !important;
 }
 
-.nav-item:hover .dropdown-menu {
-    display: block !important;
-    color: #919191;
-    margin: 0;
-    border: none;
-    border-radius: 0;
-    padding: 10px;
+.nav-link svg {
+    fill: white;
+}
 
+.navbar-nav .nav-link.show {
+    color: white !important;
+}
+
+.language-dropdown {
+    color: white !important;
+    box-shadow: 4px 4px 6px black;
+}
+
+
+.language-dropdown a {
+    text-shadow: none !important;
+    padding: 3px;
+}
+
+.language-dropdown:hover svg {
+    fill: #02ff23 !important;
+}
+
+.nav-link:focus {
+    color: white;
+}
+
+.dropdown-item:active {
+    background-color: #02ff23;
+}
+
+.dropdown-menu.show {
+    width: 100%;
+    min-width: auto;
 }
 
 .dropdown-toggle::after {
-    display: none;
+    color: white;
 }
 
 .nav-link.active {
     color: white !important;
 }
 
-.nav-link.show {
-    color: white !important;
-}
 
 
-.dropdown-menu .dropdown-item {
-    color: #919191;
-    padding-top: 10px;
-}
 
-.dropdown-menu .dropdown-item:hover {
-    color: black;
-    background-color: #f7f7f7;
-}
 
 
 .menu-itm {
@@ -81,48 +91,6 @@
     background-image: url("data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white' ><path d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z' /></svg>");
 }
 
-.offcanvas.show .nav-item {
-    border-bottom: 1px solid grey;
-    padding: 10px 0px;
-}
-
-.offcanvas.show .nav-link {
-    display: flex;
-    align-items: center;
-}
-
-.offcanvas.show .dropdown-toggle::after {
-    display: block;
-    margin-left: auto;
-}
-
-.offcanvas.show .nav-item:hover .dropdown-menu {
-    background: transparent;
-}
-
-.offcanvas.show .dropdown-item:hover {
-    background: transparent;
-    color: white;
-}
-
 .offcanvas.show .offcanvas-body {
     margin-left: 0 !important;
-}
-
-.offcanvas.show p {
-    color: white;
-}
-
-.language-option {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    color: white;
-}
-
-.language-option button {
-    background-color: transparent;
-    border: none;
-    font-weight: bold;
-    color: #02ff23;
 }

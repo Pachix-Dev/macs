@@ -6,9 +6,10 @@
 }
 
 .bodygirlmain {
-    width: 75%;
+    width: 50%;
     position: absolute;
     bottom: 0;
+    right: 0;
     z-index: 2;
 }
 
@@ -16,7 +17,6 @@
     position: relative;
     z-index: 3;
     text-shadow: 4px 4px 4px black;
-    width: max-content
 }
 
 .home-text-fisrt a {
@@ -30,13 +30,15 @@
 }
 
 .home-bodygirl-info {
-    margin-top: -9em;    
+    margin-top: -9em;
     position: relative;
     z-index: 9;
 }
-.home-bodygirl-info p{
+
+.home-bodygirl-info p {
     font-size: 25px;
 }
+
 .logoIgeco {
     position: relative;
     z-index: 9;
@@ -65,18 +67,21 @@
 
 .home-activities-wrapper {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */    
+    flex-wrap: wrap;
+    /* Allow items to wrap on smaller screens */
     position: relative;
     z-index: 1;
-    height: auto; /* Adjust to allow content to determine height */
+    height: auto;
+    /* Adjust to allow content to determine height */
 }
 
 .home-activities-wrapper div {
     width: 0;
     height: 500px;
     flex-grow: 1;
-    transition: 0.5s ease;   
-    box-sizing: border-box; /* Include padding and border in the width */
+    transition: 0.5s ease;
+    box-sizing: border-box;
+    /* Include padding and border in the width */
 }
 
 .home-activities-wrapper div img {
@@ -140,38 +145,54 @@
     font-size: 25px;
     color: white;
 }
-.home-contact-wrapper{
-    background-image: url('./bgContacto.webp') ;
-    background-size: cover;    
+
+.home-contact-wrapper {
+    background-image: url('./bgContacto.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    min-height: 500px;
     color: white;
     font-weight: bold;
     font-size: 20px;
+    display: flex;
+    align-items: end;
 }
-.home-contact-wrapper h1{
+
+.home-contact-wrapper>div {
+    margin-bottom: -40px;
+}
+
+.home-contact-wrapper h1 {
     font-family: 'Bebas Neue Cyrillic';
     font-size: 60px;
     color: #7064DA;
     text-shadow: rgb(255, 255, 255) 7px 0px 0px, rgb(255, 255, 255) 6.92869px 0.996602px 0px, rgb(255, 255, 255) 6.71622px 1.9729px 0px, rgb(255, 255, 255) 6.36692px 2.909px 0px, rgb(255, 255, 255) 5.8879px 3.78584px 0px, rgb(255, 255, 255) 5.28893px 4.58555px 0px, rgb(255, 255, 255) 4.5822px 5.29183px 0px, rgb(255, 255, 255) 3.78212px 5.8903px 0px, rgb(255, 255, 255) 2.90498px 6.36876px 0px, rgb(255, 255, 255) 1.96865px 6.71747px 0px, rgb(255, 255, 255) 0.992221px 6.92932px 0px, rgb(255, 255, 255) -0.00442571px 7px 0px, rgb(255, 255, 255) -1.00098px 6.92806px 0px, rgb(255, 255, 255) -1.97715px 6.71498px 0px, rgb(255, 255, 255) -2.91303px 6.36508px 0px, rgb(255, 255, 255) -3.78956px 5.88551px 0px, rgb(255, 255, 255) -4.58889px 5.28603px 0px, rgb(255, 255, 255) -5.29472px 4.57885px 0px, rgb(255, 255, 255) -5.89269px 3.77839px 0px, rgb(255, 255, 255) -6.3706px 2.90095px 0px, rgb(255, 255, 255) -6.71871px 1.96441px 0px, rgb(255, 255, 255) -6.92995px 0.98784px 0px, rgb(255, 255, 255) -6.99999px -0.00885142px 0px, rgb(255, 255, 255) -6.92743px -1.00536px 0px, rgb(255, 255, 255) -6.71372px -1.98139px 0px, rgb(255, 255, 255) -6.36324px -2.91705px 0px, rgb(255, 255, 255) -5.88311px -3.79328px 0px, rgb(255, 255, 255) -5.28313px -4.59223px 0px, rgb(255, 255, 255) -4.57551px -5.29762px 0px, rgb(255, 255, 255) -3.77466px -5.89507px 0px, rgb(255, 255, 255) -2.89692px -6.37243px 0px, rgb(255, 255, 255) -1.96016px -6.71995px 0px, rgb(255, 255, 255) -0.983458px -6.93057px 0px, rgb(255, 255, 255) 0.0132771px -6.99999px 0px, rgb(255, 255, 255) 1.00974px -6.92679px 0px, rgb(255, 255, 255) 1.98564px -6.71247px 0px, rgb(255, 255, 255) 2.92107px -6.36139px 0px, rgb(255, 255, 255) 3.797px -5.88071px 0px, rgb(255, 255, 255) 4.59557px -5.28022px 0px, rgb(255, 255, 255) 5.30051px -4.57215px 0px, rgb(255, 255, 255) 5.89746px -3.77094px 0px, rgb(255, 255, 255) 6.37426px -2.89289px 0px, rgb(255, 255, 255) 6.72119px -1.95591px 0px, rgb(255, 255, 255) 6.93119px -0.979076px 0px;
 }
-.home-contact-wrapper button{
+
+.home-contact-wrapper button {
     background-color: #FF7305;
     border: none;
     font-weight: bold;
     font-size: 20px;
 }
+
 @media (max-width: 425px) {
-    .bodygirlmain{
+    .bodygirlmain {
         display: none;
     }
-}       
+}
+
 @media (max-width: 768px) {
-    .home-fuel-wrapper img{
+    .home-fuel-wrapper img {
         width: 100%;
     }
+
     .home-activities-wrapper div {
         width: 100%;
         height: 300px;
-    } 
+    }
+
     .home-activities-wrapper div img {
         width: 100%;
         height: 100%;
