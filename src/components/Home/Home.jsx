@@ -107,7 +107,7 @@ export function Home () {
         <p className='text-center'>
           <img src={logofuelcolor} width={400} alt='fuel passion' />
         </p>
-        <img src='/macs/macsbg.webp' className='w-100 mt-5 position-relative' />
+        <img src='/macs/macsbg.webp' className='w-100 mt-5 position-relative' alt='MACS' />
         <Row className='home-bodygirl-info'>
           <Col md={6}>
             <img src={bodygirl} alt='macs body girl' className='w-100' />
