@@ -13,7 +13,7 @@ i18n
       escapeValue: false // React already escapes variables.
     },
     backend: {
-      loadPath: '/locales/{{lng}}/translation.json',
+      loadPath: '/macs/locales/{{lng}}/translation.json',
       requestOptions: {
         cache: 'no-store'
       }

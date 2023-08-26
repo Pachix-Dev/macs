@@ -123,29 +123,29 @@ export function Home () {
         </div>
         <div className='home-activities-wrapper'>
           <div className='position-relative'>
-            <img src='/actividades1.webp' alt='fisicoconstructivismo' draggable='false' />
+            <img src='/macs/actividades1.webp' alt='fisicoconstructivismo' draggable='false' />
             <p>{t('home.activity_1')} </p>
           </div>
           <div className='position-relative'>
-            <img src='/actividades2.webp' alt='fisicoconstructivismo' draggable='false' />
+            <img src='/macs/actividades2.webp' alt='fisicoconstructivismo' draggable='false' />
             <p>
               {t('home.activity_2')}
             </p>
           </div>
           <div className='position-relative'>
-            <img src='/actividades3.webp' alt='fisicoconstructivismo' draggable='false' />
+            <img src='/macs/actividades3.webp' alt='fisicoconstructivismo' draggable='false' />
             <p>
               {t('home.activity_3')}
             </p>
           </div>
           <div className='position-relative'>
-            <img src='/actividades4.webp' alt='fisicoconstructivismo' draggable='false' />
+            <img src='/macs/actividades4.webp' alt='fisicoconstructivismo' draggable='false' />
             <p>
               {t('home.activity_4')}
             </p>
           </div>
           <div className='position-relative'>
-            <img src='/actividades5.webp' alt='fisicoconstructivismo' draggable='false' />
+            <img src='/macs/actividades5.webp' alt='fisicoconstructivismo' draggable='false' />
             <p>
               {t('home.activity_5')}
             </p>

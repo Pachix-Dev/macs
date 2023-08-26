@@ -1,5 +1,5 @@
 .home-wrapper-first {
-    background-image: url('./bgMacsfirst.webp');
+    background-image: url('/bgMacsfirst.webp');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -147,7 +147,7 @@
 }
 
 .home-contact-wrapper {
-    background-image: url('./bgContacto.webp');
+    background-image: url('/bgContacto.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;

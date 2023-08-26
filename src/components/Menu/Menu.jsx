@@ -45,10 +45,10 @@ export function Menu () {
                 <Nav.Link href='#exhibitors' onClick={handleClose}>
                   {t('menu.option_2')}
                 </Nav.Link>
-                <Nav.Link href='/FACTSHEET MACSv1.pdf' target='_blank' onClick={handleClose}>
+                <Nav.Link href='/macs/FACTSHEET MACSv1.pdf' target='_blank' onClick={handleClose}>
                   FACTSHEET
                 </Nav.Link>
-                <Nav.Link href='/FLOORMACSv1.pdf' target='_blank' onClick={handleClose}>
+                <Nav.Link href='/macs/FLOORMACSv1.pdf' target='_blank' onClick={handleClose}>
                   {t('home.floor')}
                 </Nav.Link>
                 <Nav.Link href='#contact' onClick={handleClose}>
