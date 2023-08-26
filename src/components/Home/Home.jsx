@@ -92,20 +92,20 @@ export function Home () {
               <h1 className='text-light fs-3'>
                 {t('home.start')}
               </h1>
-              <h3 className='mt-5 text-light'>
+              <h2 className='mt-5 text-light'>
                 <span>CENTRO</span><strong> CITIBANAMEX<br />2024</strong>
-              </h3>
+              </h2>
               <img src={logofuel} width={300} alt='MACS' />
             </Col>
           </Row>
         </Container>
         <Container>
-          <img src={logoIgeco} width={300} className='logoIgeco' />
+          <img src={logoIgeco} width={300} className='logoIgeco' alt='IGECO LOGO' />
         </Container>
       </div>
       <Container className='mt-5 home-fuel-wrapper' id='about-us'>
         <p className='text-center'>
-          <img src={logofuelcolor} width={400} />
+          <img src={logofuelcolor} width={400} alt='fuel passion' />
         </p>
         <img src='/macs/macsbg.webp' className='w-100 mt-5 position-relative' />
         <Row className='home-bodygirl-info'>
@@ -127,25 +127,25 @@ export function Home () {
             <p>{t('home.activity_1')} </p>
           </div>
           <div className='position-relative'>
-            <img src='/macs/actividades2.webp' alt='fisicoconstructivismo' draggable='false' />
+            <img src='/macs/actividades2.webp' alt='activacion crosstraing zumba' draggable='false' />
             <p>
               {t('home.activity_2')}
             </p>
           </div>
           <div className='position-relative'>
-            <img src='/macs/actividades3.webp' alt='fisicoconstructivismo' draggable='false' />
+            <img src='/macs/actividades3.webp' alt='talleres y conferencias de nutrición y bienestar' draggable='false' />
             <p>
               {t('home.activity_3')}
             </p>
           </div>
           <div className='position-relative'>
-            <img src='/macs/actividades4.webp' alt='fisicoconstructivismo' draggable='false' />
+            <img src='/macs/actividades4.webp' alt='noche de adrenalina' draggable='false' />
             <p>
               {t('home.activity_4')}
             </p>
           </div>
           <div className='position-relative'>
-            <img src='/macs/actividades5.webp' alt='fisicoconstructivismo' draggable='false' />
+            <img src='/macs/actividades5.webp' alt='lanzamiento de startups hub' draggable='false' />
             <p>
               {t('home.activity_5')}
             </p>
@@ -163,13 +163,13 @@ export function Home () {
             </p>
           </Col>
           <Col md={6} xs={{ order: 1 }} className='visitor-bg'>
-            <img src={visitorimg} className='w-100' />
+            <img src={visitorimg} className='w-100' alt='Visitor Macs' />
           </Col>
         </Row>
       </Container>
       <Row className='m-0 bg-exhibitors' id='exhibitors'>
         <Col md={3}>
-          <img src={exhibitorimg} className='w-100' />
+          <img src={exhibitorimg} className='w-100' alt='Exhibitor Macs' />
         </Col>
         <Col md={6} className='my-auto'>
           <p className='title_exhibitor'>
