@@ -47,7 +47,7 @@ export function Menu () {
                 </Nav.Link>
                 <Nav.Link
                   href={i18n.language === 'en'
-                    ? '/FACTSHEET-MACS_ENv1'
+                    ? '/macs/FACTSHEET-MACS_ENv1'
                     : '/macs/FACTSHEETMACSv1.pdf'}
                   target='_blank' onClick={handleClose}
                 >
