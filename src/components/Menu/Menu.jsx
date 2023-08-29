@@ -24,7 +24,7 @@ export function Menu () {
       <Navbar className='text-uppercase text-center' expand='lg'>
         <Container>
           <Navbar.Brand as={Link} to='/'>
-            <img src={logoMacs} width={200} alt='MACS' className='me-2' />
+            <img src={logoMacs} width={250} alt='MACS' className='me-2' />
           </Navbar.Brand>
           <Navbar.Toggle onClick={handleShow} />
           <Navbar.Offcanvas
