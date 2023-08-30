@@ -46,7 +46,7 @@ export function Menu () {
                   {t('menu.option_2')}
                 </Nav.Link>
                 <Nav.Link
-                  href='/macs/FACTSHEETMACSv1.pdf'
+                  href='/macs/FACTSHEET MACS_FINAL.pdf'
                   target='_blank' onClick={handleClose}
                 >
                   FACTSHEET
