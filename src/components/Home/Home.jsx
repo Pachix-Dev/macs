@@ -10,7 +10,7 @@ import { loadSlim } from 'tsparticles-slim'
 import { useCallback } from 'react'
 import Particles from 'react-particles'
 import { useTranslation } from 'react-i18next'
-import logofuel from '../../assets/fuelpassion.webp'
+import logofuel from '../../assets/STARTMOVING.webp'
 export function Home () {
   const { t } = useTranslation()
   const particlesInit = useCallback(async engine => {
