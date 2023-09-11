@@ -104,9 +104,9 @@ export function Home () {
         </Container>
       </div>
       <Container className='mt-5 home-fuel-wrapper' id='about-us'>
-        <p className='text-center'>
+        {/* <p className='text-center'>
           <img src={logofuelcolor} width={400} alt='fuel passion' />
-        </p>
+        </p> */}
         <img src='/macs/macsbg.webp' className='w-100 mt-5 position-relative' alt='MACS' />
         <Row className='home-bodygirl-info'>
           <Col md={6}>
