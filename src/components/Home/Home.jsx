@@ -1,7 +1,6 @@
 import { Col, Container, Row } from 'react-bootstrap'
 import bodygirlmain from '../../assets/bodygirlmain.webp'
 import logoIgeco from '../../assets/logoIgeco.webp'
-import logofuelcolor from '../../assets/fuelpassionColor.webp'
 import bodygirl from '../../assets/bodygirl.webp'
 import visitorimg from '../../assets/visitorimg.webp'
 import exhibitorimg from '../../assets/exhibitorimgv2.webp'
@@ -104,9 +103,6 @@ export function Home () {
         </Container>
       </div>
       <Container className='mt-5 home-fuel-wrapper' id='about-us'>
-        {/* <p className='text-center'>
-          <img src={logofuelcolor} width={400} alt='fuel passion' />
-        </p> */}
         <img src='/macs/macsbg.webp' className='w-100 mt-5 position-relative' alt='MACS' />
         <Row className='home-bodygirl-info'>
           <Col md={6}>
