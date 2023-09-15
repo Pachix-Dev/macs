@@ -103,7 +103,7 @@ export function Home () {
         </Container>
       </div>
       <Container className='mt-5 home-fuel-wrapper' id='about-us'>
-        <img src='bg.webp' className='w-100 mt-5 position-relative' alt='MACS' />
+        <img src='/macsbg.webp' className='w-100 mt-5 position-relative' alt='MACS' />
         <Row className='home-bodygirl-info'>
           <Col md={6}>
             <img src={bodygirl} alt='macs body girl' className='w-100' />
