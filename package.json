@@ -33,5 +33,5 @@
   "eslintConfig": {
     "extends": "./node_modules/standard/eslintrc.json"
   },
-  "homepage": "https://hfmexico.mx/macs"
+  "homepage": "https://www.macsexpo.mx/"
 }
