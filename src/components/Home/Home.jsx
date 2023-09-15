@@ -103,7 +103,7 @@ export function Home () {
         </Container>
       </div>
       <Container className='mt-5 home-fuel-wrapper' id='about-us'>
-        <img src='/macs/macsbg.webp' className='w-100 mt-5 position-relative' alt='MACS' />
+        <img src='bg.webp' className='w-100 mt-5 position-relative' alt='MACS' />
         <Row className='home-bodygirl-info'>
           <Col md={6}>
             <img src={bodygirl} alt='macs body girl' className='w-100' />
@@ -119,29 +119,29 @@ export function Home () {
         </div>
         <div className='home-activities-wrapper'>
           <div className='position-relative'>
-            <img src='/macs/actividades1.webp' alt='fisicoconstructivismo' draggable='false' />
+            <img src='/actividades1.webp' alt='fisicoconstructivismo' draggable='false' />
             <p>{t('home.activity_1')} </p>
           </div>
           <div className='position-relative'>
-            <img src='/macs/actividades2.webp' alt='activacion crosstraing zumba' draggable='false' />
+            <img src='/actividades2.webp' alt='activacion crosstraing zumba' draggable='false' />
             <p>
               {t('home.activity_2')}
             </p>
           </div>
           <div className='position-relative'>
-            <img src='/macs/actividades3.webp' alt='talleres y conferencias de nutrición y bienestar' draggable='false' />
+            <img src='/actividades3.webp' alt='talleres y conferencias de nutrición y bienestar' draggable='false' />
             <p>
               {t('home.activity_3')}
             </p>
           </div>
           <div className='position-relative'>
-            <img src='/macs/actividades4.webp' alt='noche de adrenalina' draggable='false' />
+            <img src='/actividades4.webp' alt='noche de adrenalina' draggable='false' />
             <p>
               {t('home.activity_4')}
             </p>
           </div>
           <div className='position-relative'>
-            <img src='/macs/actividades5.webp' alt='lanzamiento de startups hub' draggable='false' />
+            <img src='/actividades5.webp' alt='lanzamiento de startups hub' draggable='false' />
             <p>
               {t('home.activity_5')}
             </p>

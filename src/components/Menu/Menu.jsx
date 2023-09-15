@@ -46,12 +46,12 @@ export function Menu () {
                   {t('menu.option_2')}
                 </Nav.Link>
                 <Nav.Link
-                  href='/macs/FACTSHEET MACS_FINAL.pdf'
+                  href='/FACTSHEET MACS_FINAL.pdf'
                   target='_blank' onClick={handleClose}
                 >
                   FACTSHEET
                 </Nav.Link>
-                <Nav.Link href='/macs/FLOORMACSv1.pdf' target='_blank' onClick={handleClose}>
+                <Nav.Link href='/FLOORMACSv1.pdf' target='_blank' onClick={handleClose}>
                   {t('home.floor')}
                 </Nav.Link>
                 <Nav.Link href='#contact' onClick={handleClose}>
