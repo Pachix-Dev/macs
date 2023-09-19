@@ -82,7 +82,7 @@ export function ContactForm () {
               </Form.Group>
               <Suspense fallback={<div>Loading reCAPTCHA...</div>}>
                 <ReCAPTCHA
-                  sitekey='6LdUjjonAAAAADb5Z9eAiGXqMdmc6aUM8ZLzYjBg'
+                  sitekey='6LeljqwnAAAAAHcToBhu6iq8o4kahL9sopQjC1A3'
                   ref={captchaRef}
                   onChange={onChange}
                 />
