@@ -29,24 +29,15 @@ export function ContactForm () {
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ token, formData })
-      }
-      const requestOptions2 = {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
         body: JSON.stringify({ formData })
       }
       try {
         setSendStatus(true)
         const res = await fetch(
-          'https://hfmexico.mx/foro-electromovilidad/backend/register.php',
-          requestOptions
-        )
+          `https://www.google.com/recaptcha/api/siteverify?secret=6LeljqwnAAAAADOuPHFffGs9R2VyN2QYZrNUUiJH&response=${token}`)
         const data = await res.json()
         if (data.status) {
-          const statusEmail = await fetch('https://hfmexico.mx/foro-electromovilidad/backend/email/send-email', requestOptions2)
+          const statusEmail = await fetch('https://hfmexico.mx/foro-electromovilidad/backend/email/send-email3', requestOptions)
           const dataEmail = await statusEmail.json()
           if (dataEmail.status) {
             setSendStatus(false)
@@ -68,9 +59,8 @@ export function ContactForm () {
     }
   }
   return (
-    <div className='home-contact-wrapper pt-5 pb-5' id='contact'>
+    <div className='pt-5 pb-5' id='contact'>
       <Container>
-        <h1>{t('home.contact')}</h1>
         <Row>
           <Col md={6}>
             <Form id='form-contact' onSubmit={handleSubmit}>

@@ -10,6 +10,7 @@ import { useCallback } from 'react'
 import Particles from 'react-particles'
 import { useTranslation } from 'react-i18next'
 import logofuel from '../../assets/STARTMOVING.webp'
+import { ContactForm } from './ContactForm'
 export function Home () {
   const { t } = useTranslation()
   const particlesInit = useCallback(async engine => {
@@ -94,7 +95,7 @@ export function Home () {
               <h2 className='mt-5 text-light'>
                 <span>CENTRO</span><strong> CITIBANAMEX<br />2024</strong>
               </h2>
-              <img src={logofuel} width={300} alt='MACS' />
+              <img src={logofuel} width={250} alt='MACS' />
             </Col>
           </Row>
         </Container>
@@ -178,6 +179,7 @@ export function Home () {
       </Row>
       <div className='home-contact-wrapper'>
         <Container>
+          <ContactForm />
           <h1>{t('home.contact')}</h1>
         </Container>
       </div>

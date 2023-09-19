@@ -5,7 +5,7 @@ import './Footer.css'
 export function Footer () {
   return (
     <footer>
-      <Container className='pt-5 pb-5' id='contact'>
+      <Container className='pt-5 pb-5'>
         <Row>
           <Col md={6}>
             <p>
