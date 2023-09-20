@@ -29,14 +29,25 @@ export function ContactForm () {
         headers: {
           'Content-Type': 'application/json'
         },
+        body: JSON.stringify({ token })
+      }
+
+      const requestOptions2 = {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
         body: JSON.stringify({ formData })
       }
       try {
         setSendStatus(true)
-        const res = await fetch(`https://www.google.com/recaptcha/api/siteverify?secret=6LeljqwnAAAAADOuPHFffGs9R2VyN2QYZrNUUiJH&response=${token}`, { mode: 'no-cors' })
-        console.log(res)
-        if (res.status) {
-          const statusEmail = await fetch('https://hfmexico.mx/foro-electromovilidad/backend/email/send-email3', requestOptions)
+        const res = await fetch(
+          'https://hfmexico.mx/foro-electromovilidad/backend/verifyMacs.php',
+          requestOptions
+        )
+        const data = await res.json()
+        if (data.success) {
+          const statusEmail = await fetch('https://hfmexico.mx/foro-electromovilidad/backend/email/send-email3', requestOptions2)
           const dataEmail = await statusEmail.json()
           if (dataEmail.status) {
             setSendStatus(false)
@@ -86,7 +97,7 @@ export function ContactForm () {
                   onChange={onChange}
                 />
               </Suspense>
-              {captcha ? '' : <div style={{ color: '#dc3545' }}>{message}</div>}
+              {captcha ? '' : <div style={{ color: 'white' }}>{message}</div>}
               <Button type='submit' className='mt-3'>
                 {sendStatus
                   ? <><Spinner as='span' animation='border' size='sm' role='status' aria-hidden='true' /><span> Loading...</span></>
