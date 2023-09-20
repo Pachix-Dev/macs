@@ -31,10 +31,15 @@ export function ContactForm () {
         },
         body: JSON.stringify({ formData })
       }
+      const requestOptions2 = {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      }
       try {
         setSendStatus(true)
-        const res = await fetch(
-          `https://www.google.com/recaptcha/api/siteverify?secret=6LeljqwnAAAAADOuPHFffGs9R2VyN2QYZrNUUiJH&response=${token}`)
+        const res = await fetch(`https://www.google.com/recaptcha/api/siteverify?secret=6LeljqwnAAAAADOuPHFffGs9R2VyN2QYZrNUUiJH&response=${token}`, requestOptions2)
         const data = await res.json()
         if (data.status) {
           const statusEmail = await fetch('https://hfmexico.mx/foro-electromovilidad/backend/email/send-email3', requestOptions)
