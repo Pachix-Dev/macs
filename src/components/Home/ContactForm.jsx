@@ -35,6 +35,7 @@ export function ContactForm () {
         setSendStatus(true)
         const res = await fetch(`https://www.google.com/recaptcha/api/siteverify?secret=6LeljqwnAAAAADOuPHFffGs9R2VyN2QYZrNUUiJH&response=${token}`, { mode: 'no-cors' })
         const data = await res.json()
+        console.log(data)
         if (data.status) {
           const statusEmail = await fetch('https://hfmexico.mx/foro-electromovilidad/backend/email/send-email3', requestOptions)
           const dataEmail = await statusEmail.json()
